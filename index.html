@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+	<title>Las Vegas Saints Youth Lacrosse</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" data-title="Saints Lax | Home" id="index">
+
+		<header data-role="header">
+			<h1>Las Vegas Saints Youth Lacrosse</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#schedule" data-icon="grid">Schedule</a></li>
+					<li><a href="#contact" data-icon="phone">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<section data-role="content">
+			<p>The Saints is a youth lacrosse club based out of Las Vegas, Nevada. Saints is for boys grades 2-12 who are interested in learning lacrosse in a fun and nuturing enviorment. No experience is necessary to participate. Full equipment will be required to play. Rental equipment is available on a first come, first serve basis. <br> <br>
+
+			If your child attends a private school west of the I-15 or if you child attends a Diocese school east of I-15, you are zoned to play for Saints per SNLA (Southern Nevada Lacrosse Asscociation). The <a href="http://snla.us">SNLA</a> is a wonderful resource for all things Nevada lacrosse. 
+
+			<a href="lax.com/starter-kits">Need help purchasing gear? </a> <br>
+			<a href="rentals.html">Need a rental set? </a> <br>
+			<a href="lacrosseforce.com/girls">Looking for girls lacrosse? </a> <br>
+			<a href="#contact">Join our mailing list </a>
+
+
+		</section>
+
+		<footer data-role="footer">
+			<h4>Saints Lacrosse Club &copy;2018<br><a href="#contact">Contact Us</a></h4>
+		</footer>
+
+	</div> <!--INDEX PAGE-->
+
+	<div data-role="page" data-title="Saints Lax | Schedule" id="schedule">
+
+		<header data-role="header">
+			<h1>Las Vegas Saints Youth Lacrosse</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#index" data-icon="home">Home</a></li>
+					<li><a href="#schedule" data-icon="grid" class="ui-btn-active">Schedule</a></li>
+					<li><a href="#contact" data-icon="phone">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<section data-role="content">
+			<div data-role="collapsibleset" >
+			    <div data-role="collapsible">
+			        <h3>Fall</h3>
+			    <p>fall details</p>
+			    <a href="#contact">Sign Up</a>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>Winter</h3>
+			    <p>winter details</p>
+			    <a href="#contact">Sign Up</a>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>Spring</h3>
+			    <p>spring details</p>
+			    <a href="#contact">Sign Up</a>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>Summer</h3>
+			    <p>summer details</p>
+			    <a href="#contact">Sign Up</a>
+			    </div>
+			</div>
+		</section>
+
+		<footer data-role="footer">
+			<h4>Saints Lacrosse Club &copy;2018 <br> <a href="#contact">Contact Us</a></h4>
+		</footer>
+
+	</div> <!-- schedule page-->
+
+	<div data-role="page" data-title="Saints Lax | Contact Us" id="contact">
+
+		<header data-role="header">
+			<h1>Las Vegas Saints Youth Lacrosse</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#index" data-icon="home">Home</a></li>
+					<li><a href="#schedule" data-icon="grid">Schedule</a></li>
+					<li><a href="#contact" data-icon="phone" class="ui-btn-active">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+		<section data-role="content">
+			<form name="signup" action="form.py" method="post">
+				<fieldset>
+					<legend>First Name:</legend>
+					<input type="text" name="fName" placeholder="George" id="fName" required>
+					<legend>Last Name:</legend>
+					<input type="text" name="lName" placeholder="Johnson" id="lName" required>
+					<legend>Email:</legend>
+					<input type="email" name="email" placeholder="example@gmail.com" id="email" required>
+					<legend>Phone:</legend>
+					<input type="tel" name="cell" title="999-999-9999 format ONLY" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="cell" required>
+					<legend>Zipcode:</legend>
+					<input type="text" name="zip" title="5 digit format ONLY" placeholder="90210" pattern="\d{5}" id="zip" required>
+					<legend>Player Name:</legend>
+					<input type="text" name="pName" placeholder="Joey" id="pName" required>
+					<legend>Player Grade:</legend>
+					<input type="number" name="grade" placeholder="5" id="grade" required>
+					<legend>Player School:</legend>
+					<input type="text" name="school" placeholder="LV Day School" id="school" required>
+					<legend>Years Experience:</legend>
+					<input type="number" name="xp" step=".5" placeholder="1.5" id="xp" required>
+				</fieldset>
+				<fieldset>
+					<legend>Contact Reasons:</legend>
+					<input type="checkbox" name="pLesson" id="reason1" value="private lessons">
+					<label for="reason1">Private Lessons</label>
+					<input type="checkbox" name="gLesson" id="reason2" value="group lessons">
+					<label for="reason2">Group Lessons</label>
+				</fieldset>
+				<input type="submit" name="submit" value="Send"></input>
+			</form>
+		</section>
+		<footer data-role="footer">
+			<h4>Saints Lacrosse Club &copy;2018</h4>
+		</footer>
+	</div> <!-- contact page-->
+</body>
+</html>
