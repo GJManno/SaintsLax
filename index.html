@@ -26,7 +26,7 @@
 		<section data-role="content">
 			<p>The Saints is a youth lacrosse club based out of Las Vegas, Nevada. Saints is for boys grades 2-12 who are interested in learning lacrosse in a fun and nuturing enviorment. No experience is necessary to participate. Full equipment will be required to play. Rental equipment is available on a first come, first serve basis. <br> <br>
 
-			If your child attends a private school west of the I-15 or if you child attends a Diocese school east of I-15, you are zoned to play for Saints per SNLA (Southern Nevada Lacrosse Asscociation). The <a href="http://snla.us">SNLA</a> is a wonderful resource for all things Nevada lacrosse. 
+			If your child attends a private school west of the I-15 or if you child attends a Diocese school east of I-15, you are zoned to play for Saints per SNLA (Southern Nevada Lacrosse Asscociation). The <a href="http://snla.us">SNLA</a> is a wonderful resource for all things Nevada lacrosse. </p> <br>
 
 			<a href="lax.com/starter-kits">Need help purchasing gear? </a> <br>
 			<a href="rentals.html">Need a rental set? </a> <br>
@@ -59,7 +59,9 @@
 			<div data-role="collapsibleset" >
 			    <div data-role="collapsible">
 			        <h3>Fall</h3>
+			    <h4>2018</h4>
 			    <p>fall details</p>
+			    <h4>2019</h4>
 			    <a href="#contact">Sign Up</a>
 			    </div>
 			    <div data-role="collapsible">
@@ -99,25 +101,25 @@
 			</div>
 		</header>
 		<section data-role="content">
-			<form name="signup" action="form.py" method="post">
+			<form name="contact" action="form.py" method="post">
 				<fieldset>
-					<legend>First Name:</legend>
+					<label for="fName">First Name:</label>
 					<input type="text" name="fName" placeholder="George" id="fName" required>
-					<legend>Last Name:</legend>
+					<label for="lName">Last Name:</label>
 					<input type="text" name="lName" placeholder="Johnson" id="lName" required>
-					<legend>Email:</legend>
+					<label for="email">Email:</label>
 					<input type="email" name="email" placeholder="example@gmail.com" id="email" required>
-					<legend>Phone:</legend>
+					<label for="cell">Phone:</label>
 					<input type="tel" name="cell" title="999-999-9999 format ONLY" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="cell" required>
-					<legend>Zipcode:</legend>
+					<label for="zip">Zipcode:</label>
 					<input type="text" name="zip" title="5 digit format ONLY" placeholder="90210" pattern="\d{5}" id="zip" required>
-					<legend>Player Name:</legend>
+					<label for="pName">Player Name:</label>
 					<input type="text" name="pName" placeholder="Joey" id="pName" required>
-					<legend>Player Grade:</legend>
+					<label for="grade">Player Grade:</label>
 					<input type="number" name="grade" placeholder="5" id="grade" required>
-					<legend>Player School:</legend>
+					<label for="school">Player School:</label>
 					<input type="text" name="school" placeholder="LV Day School" id="school" required>
-					<legend>Years Experience:</legend>
+					<label for="xp">Years Experience:</label>
 					<input type="number" name="xp" step=".5" placeholder="1.5" id="xp" required>
 				</fieldset>
 				<fieldset>
@@ -126,8 +128,16 @@
 					<label for="reason1">Private Lessons</label>
 					<input type="checkbox" name="gLesson" id="reason2" value="group lessons">
 					<label for="reason2">Group Lessons</label>
+					<input type="checkbox" name="camp" id="reason3" value="camp/clinic">
+					<label for="reason3">Camp/Clinic</label>
+					<input type="checkbox" name="team" id="reason4" value="joining a team">
+					<label for="reason4">Joining A Team</label>
 				</fieldset>
-				<input type="submit" name="submit" value="Send"></input>
+				<p>Comments: <br></p>
+				<textarea name="comments"
+					placeholder="Please enter additional information here.">
+				</textarea>
+				<input type="submit" name="submit" value="Send">
 			</form>
 		</section>
 		<footer data-role="footer">
